@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+<div class="informativo">
+   <h5> IMC</h5>
+    <h3>Cálculo IMC</h3>
+    <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+    
+    <p> índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+    
+    <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
+</div>
+
+
+    <div class="calculadora">
+<div class="exemplo">
+    <p class="alturaEX"> Altura(ex.: 1,70)</p>   <p class="pesoEX">Peso (ex.: 69,2)</p>
+</div>
+<div id="input_valor">
+    <input class="input_altura" type="text"></input>
+    <input class="input_peso" type="text"></input>
+</div>
+<div class="botoes">
+<p onclick="calcular()" class="calcular">Calcular <i class="fas fa-chevron-right"></i></p> 
+<p onclick="limpar()" class="limpar">Limpar <i class="fas fa-chevron-right"></i></p>
+</div>
+<h4>VEJA A INTERPRETAÇÃO DO IMC</h4>
+<div class="tabela">
+
+    <table>    
+<tr class="linha1">
+<td class="titulo_tabela">IMC</td>		
+<td class="titulo_tabela">CLASSIFICAÇÃO</td>
+<td class="titulo_tabela">OBESIDADE (GRAU)</td>
+</tr>
+
+<tr class="linha2">
+<td>MENOR QUE 18,5</td>		
+<td>MAGREZA</td>
+<td>0</td>
+</tr>
+<tr class="linha3">
+<td> 18,5 E 24,9</td>		
+<td>NORMAL</td>
+<td>0</td>
+</tr>
+
+<tr class="linha4">
+<td>ENTRE 25,0 E 29,9</td>		
+<td>SOBREPESO</td>
+<td>I</td>
+</tr>
+
+<tr class="linha5">
+<td>ENTRE 30,0 E 39,9</td>		
+<td>OBESIDADE</td>
+<td>II</td>
+</tr>
+
+
+<tr class="linha6">
+    <td>MAIOR QUE 40,0</td>		
+<td>OBESIDADE GRAVE</td>
+<td>III</td>
+</tr>
+</table>
+
+</div>
+
+
+<span>SEU IMC :<strong class="textoResultado"></strong></span>
+<div class="test">
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<script src="script.js"></script>
+<script
+src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+data-auto-a11y="true"
+></script>
+    
+</body>
+</html>
